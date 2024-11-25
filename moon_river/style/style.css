@@ -1,0 +1,882 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+.container{
+    padding: 0 230px;
+}
+
+h1, h2, h3{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Forum', sans-serif;
+    color: #272727;
+    user-select: none;
+}
+
+/* Segoe UI - 'Noto Sans' */
+/* Futura PT = 'Didact Gothic' */
+/* font-family: 'Forum', sans-serif; */
+
+.header{
+    background-image: url(../images/box-head/black_back.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    
+}
+
+/* БУРГЕР */
+
+.header-menu{
+    /* display: none; */
+}
+
+.burger-menu{
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    transition: all .3s;
+}
+
+.active{
+    right: 0;
+}
+
+.lock{
+    overflow: hidden;
+}
+
+.burger-close{
+    cursor: pointer;
+} 
+
+.burger-header{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.burger-title-head{
+    position: relative;
+    font-weight: 100;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.link-head-title{
+    color: #FFFFFF;
+}
+
+.chapter{
+    width: 100%;
+    background-color: #2F2F2F;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 50px;
+}
+
+.chapter_icon-link{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 450;
+    font-size: 20px;
+    color: #FFFFFF;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+    padding-bottom: 21px;
+}
+
+.chapter_icon-link:hover{
+    padding-bottom: 21px;
+    border-bottom: 1px solid #FFFFFF;
+    transition: border-bottom 0.3s ease;
+}
+
+.box-content{
+    margin-top: 55px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.content-title{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.content_icon-link{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+.content_icon-link:hover{
+    color: #dad9d9;
+    transition: color 0.3s ease;
+}
+
+.content-icon{
+    margin-bottom: 20px;
+}
+
+.show-brends-link{
+    color: #EFC58B;
+    font-style: italic;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.interval{
+    border: 1.8px solid #2F2F2F;
+    margin: 60px 0;
+}
+
+.burger-info{
+    margin-bottom: 70px;
+}
+
+.box_foto-info{
+    display: flex;
+    /* gap: 100px; */
+    justify-content: space-around;
+}
+
+.box_foto{
+    position: relative;
+}
+
+.burder-foto{
+    position: relative;
+}
+
+.box_foto-text_top,
+.box_foto-text_bottom{
+    position: absolute;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.box_foto-text_top{
+    top: 5px;
+    left: 20px;
+}
+
+.box_foto-text_bottom{
+    right: 64px;
+    bottom: 10px
+}
+
+.box_foto-text_center{
+    position: absolute;
+    font-family: 'Forum', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #FFFFFF;
+    top: 22%;
+    left: 28%;
+}
+
+.box-foto_arrow{
+    position: relative;
+    cursor: pointer;
+}
+
+.burger_arrow{
+    position: absolute;
+    right: 20px;
+    bottom: 30px
+}
+
+.burger-box{
+    margin-top: 30px;
+}
+
+.burger-feedback_title{
+    margin: 0;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.burger-wrap_for_input{
+    position: relative;
+    margin-top: 15px;
+}
+
+
+/* Заканчивается карусель */
+
+.box-head{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-head{
+    position: relative;
+    font-weight: 100;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #272727;
+    z-index: -100;
+}
+
+.img-title{
+    position: absolute;
+    z-index: 100;
+    top: 13px;
+    left: 93px;
+    width: 17px;
+    height: 30px;
+
+}
+
+.big-letter{
+    font-size: 50px;
+}
+
+.head-icon{
+    display: flex;
+    gap: 0 40px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 300;;
+}
+
+.head-burger{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.burger-icon{
+    background-color: #FFFFFF;
+    height: 2px;
+    width: 25px;
+}
+
+/* ПЕРВЫЙ БЛОК СОЕДЕНЕННЫЙ С ШАПКОЙ */
+
+.box-1_main{
+    background-image: url(../images/box-1/bracelet_cartier_back.png);
+    background-repeat: no-repeat;
+    background-position: top right 155px;
+    height: 170px;
+}
+
+.box1-title{
+    margin-top: 250px;
+    font-weight: 400;
+    font-size: 64px;
+}
+
+.box1-under_element{
+    margin-top: 50px;
+    margin-left: 95px;
+    display: flex;
+    gap: 0 50px;    
+}
+
+.under-element_text{
+    font-style: italic;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.under-element_img{
+    object-fit: contain;
+}
+
+.box-1_low{
+    margin-top: 300px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.switch_language{
+    display: flex;
+    gap: 0 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.lang-ru:hover,
+.lang-en:hover{
+    color: #C4C4C4;
+    transition: color 0.4s;
+}
+
+.low-text{
+    color: #ffffff;
+}
+
+.low-text{
+    text-align: end;
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+
+.low-text_name{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.low-text_description{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #C2C2C2;
+}
+
+.low-text_price{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    color: #EFC58B;
+}
+
+/* Второй раздел */
+
+.box-2{
+    margin-top: 20px;
+    display: flex;
+    gap: 0 20px;
+    padding: 0;
+}
+
+.box2_img{
+    position: relative;
+    width: 941px;
+    height: 672px;
+    z-index: -1;
+}
+
+.big-box{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+.big-box:hover{
+    background-color: rgba(101, 95, 95, 0.5);
+    transition: background-color 0.5s;
+}
+
+.box2-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    color: #FFFFFF;
+}
+
+.box2-text{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.box2-title{
+    font-family: 'Forum', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    margin: 15px;
+    margin-top: 0;
+}
+
+
+/* Третий блок */
+
+.box-3{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+}
+
+.box-3_backfon{
+    position: relative;
+    width: 941px;
+    z-index: -100;
+}
+
+.box-3_find{
+    position: absolute;
+    top: 30%;
+    z-index: 9;
+    color: #FFFFFF;
+}
+
+.box-3_title{
+    font-family: 'Forum', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+}
+
+.box-3_text{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 25px;
+    line-height: 23px;
+}
+/* Инпут для адреса */
+.box-3_locate{
+    position: relative;
+    margin-top: 80px;
+}
+
+.box-3_input{
+    position: relative;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    width: 386px;
+    padding-bottom: 10px;
+    color:rgb(255, 255, 255, 40%);
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.box-3_input::placeholder{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(255, 255, 255, 40%)
+}
+
+.box-3_arrow{
+    position: absolute;
+    right: 16px;
+}
+
+/* Карта в 3 блоке */
+
+.box-3_map{
+    position: relative;
+    margin-bottom: 0 !important;
+}
+
+.box-3_mapfon{
+    position: relative;
+    width: 961px;
+    height: 801px;
+}
+
+.points_maps{
+    position: absolute;
+    background-image: url(../images/box-3/point_uncolor.svg);
+    top: 50%;
+    right: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.points_maps:hover{
+    background-image: url(../images/box-3/point_color.svg);
+
+}
+
+.points_street{
+    position: absolute;
+    width: 134px;
+    height: 43px;
+    background-color: rgb(103, 103, 103, 58%);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    top: -50px;
+    right: -115px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.points_on_maps-1{
+    top: 28%;
+    right: 80%;
+}
+
+.points_on_maps-2{
+    top: 30%;
+    right: 56%;
+}
+
+.points_on_maps-3{
+    top: 39%;
+    right: 41%;
+}
+
+.points_on_maps-4{
+    top: 57%;
+    right: 12%;
+}
+
+.points_on_maps-5{
+    top: 66%;
+    right: 53%;
+}
+/* Четвертый блок */
+
+.box-4_many-fotos{
+    margin: 20px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+    gap: 20px;
+}
+
+.wrap{
+    background-color: #EDEDED;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.wrap_item-5{
+    grid-column: 3 / 4;
+}
+/* усаживаем второе изображение на место */
+.wrap_item-2{
+    position: relative;
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+}
+
+.foto-text_item-2{
+    position: absolute;
+}
+
+.foto-item-2{
+    width: 710px;
+    height: 930px;
+}
+
+/* надписи под фото */
+.foto-text{
+   position: absolute;
+   left: 30px;
+   bottom: 20px;
+}
+
+/* добовляю падинги для фото колец */
+.foto-padding{
+    padding: 70px;
+}
+
+/* ПЯТЫЙ БЛОК КАРУСЕЛЬ */
+
+.box-5{
+    background-color: #272727;
+}
+
+.box-5_title{
+    padding: 110px 0 60px;
+    font-family: 'Forum', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+/* Настраиваю иконки и стрелки в пятом боксе */
+.box-5-social_arrows{
+    padding: 60px 0 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-5_social-networks{
+    display: flex;
+    gap: 20px;
+}
+
+.box-5_network{
+    cursor: pointer;
+}
+
+.box-5_arrows{
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    gap: 15px;
+}
+
+.arrow{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.box-5_dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.dots{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #656565;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+    cursor: pointer;
+}
+
+.dots:hover{
+    background-color: #FFFFFF;
+    transform: scale(1.3);
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+/* работа с каруселью */
+
+.carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 5) - 12px);
+    overflow-x: auto;
+    gap: 0 30px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+}
+
+.carousel_img{
+    scroll-snap-align: center;
+    display: block;
+    width: 100%;
+    height: 330px;
+}
+
+.no-transition{
+    scroll-behavior: auto;
+}
+
+/* Шестой блок */
+
+.box-6{
+    display: flex;
+}
+
+.box-6_img{
+    width: 50%;
+} 
+
+.back_img{
+    width: 100%;
+    display: block;
+}
+
+.box-6_box{
+    margin: 0 auto;
+}
+
+.box-6_info{
+    padding-top: 230px;
+}
+
+.box-6_text{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.box-6_number{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #959595;
+    margin-top: 30px;
+}
+
+.box-6_subscribe{
+    padding-top: 100px;
+}
+
+.subscribe_news{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.wrap_for_input{
+    position: relative;
+    margin-top: 40px;
+
+}
+
+.box-6_input{
+    position: relative;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #272727;
+    background-color: transparent;
+    width: 240px;
+    padding-bottom: 10px;
+    color: #959595;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.box-6_input::placeholder{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #959595
+}
+
+.box-6_arrow{
+    position: absolute;
+    right: 68px;
+}
+
+/* футор */
+
+.footer{
+    background-color: #272727;
+}
+
+/* ссылка */
+
+.footer-list{
+    margin: 0;
+    margin-left: 60px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.items-link{
+    color: #FFFFFF;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 450;
+    font-size: 14px;
+}
+
+/* лого и инфа */
+
+.footer-info{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding-bottom: 20px;
+}
+
+.title_img{
+    cursor: pointer;
+}
+
+.footer-tel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-feedback{
+    display: flex;
+}
+
+.footer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-feedback_title{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.footer-tel{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 4300;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
+.footer-appstore{
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer_app{
+    cursor: pointer;
+}
+
+.footer_input{
+    position: relative;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: transparent;
+    width: 240px;
+    padding-bottom: 10px;
+    color: #959595;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.footor_arrow{
+    position: absolute;
+    right: -2px;
+}
+
